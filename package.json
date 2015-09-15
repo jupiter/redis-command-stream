@@ -1,0 +1,27 @@
+{
+  "name": "redis-stream",
+  "version": "0.1.0",
+  "description": "Streaming Redis DUMP and RESTORE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jupiter/node-redis-stream.git"
+  },
+  "author": "Pieter Raubenheimer",
+  "bin": {
+    "msb": "./bin/redis-stream"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jupiter/node-redis-stream/issues"
+  },
+  "homepage": "https://github.com/jupiter/node-redis-stream",
+  "dependencies": {
+    "async": "^1.4.2",
+    "minimist": "^1.2.0",
+    "redis": "^1.0.0"
+  }
+}
