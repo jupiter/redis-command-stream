@@ -1,24 +1,25 @@
 {
-  "name": "redis-stream",
+  "name": "redis-command-stream",
   "version": "0.1.0",
-  "description": "Streaming Redis DUMP and RESTORE",
+  "description": "Dump a Redis database as a stream of commands",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jupiter/node-redis-stream.git"
+    "url": "https://github.com/jupiter/redis-command-stream.git"
   },
   "author": "Pieter Raubenheimer",
   "bin": {
-    "msb": "./bin/redis-stream"
+    "redis-command-stream": "./bin/redis-command-stream",
+    "redis-stream": "./bin/redis-command-stream"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jupiter/node-redis-stream/issues"
+    "url": "https://github.com/jupiter/redis-command-stream/issues"
   },
-  "homepage": "https://github.com/jupiter/node-redis-stream",
+  "homepage": "https://github.com/jupiter/redis-command-stream",
   "dependencies": {
     "async": "^1.4.2",
     "minimist": "^1.2.0",

@@ -1,10 +1,10 @@
-# redis-stream
+# redis-command-stream
 Dump a Redis database as a stream of commands
 
 ## Install
 
 ```
-npm install -g redis-stream
+npm install -g redis-command-stream
 ```
 
 ## Use
@@ -12,7 +12,7 @@ npm install -g redis-stream
 ```
 $ redis-stream --help
 
-Usage: redis-stream [OPTIONS] [key pattern]
+Usage: redis-dump [OPTIONS] [key pattern]
   -h <hostname>      Server hostname (default: 127.0.0.1).
   -p <port>          Server port (default: 6379).
   -s <socket>        Server socket (overrides hostname and port).
