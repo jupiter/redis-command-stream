@@ -12,7 +12,7 @@ npm install -g redis-command-stream
 ```
 $ redis-stream --help
 
-Usage: redis-dump [OPTIONS] [key pattern]
+Usage: redis-stream [OPTIONS] [key pattern]
   -h <hostname>      Server hostname (default: 127.0.0.1).
   -p <port>          Server port (default: 6379).
   -s <socket>        Server socket (overrides hostname and port).
