@@ -18,11 +18,14 @@ Usage: redis-stream [OPTIONS] [key pattern]
   -s <socket>        Server socket (overrides hostname and port).
   -a <password>      Password to use when connecting to the server.
   -n <db>            Database number.
+  --pipe             Output in protocol format for piping to redis-cli.
+  --flushdb          Insert command to empty the destination database.
 
 Examples:
-  redis-stream -n 5 "hotel*" | redis-cli -n 6
   redis-stream -n 5 "hotel*" > export.txt
-  (cat export.txt | redis-cli -n 6)
+  redis-stream -n 5 --pipe "hotel*" | redis-cli -n 6 --pipe
+  redis-stream -n 5 --pipe "hotel*" > export.txt
+  (cat export.txt | redis-cli -n 6 --pipe)
 ```
 
 ## License
